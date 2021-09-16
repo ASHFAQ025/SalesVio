@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SalesVio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+   <link rel="stylesheet" href="salesvio.css">
+   <link rel="stylesheet" href="mediasalevio.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header position-sticky">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light position-sticky">
+      <img src="images2/logo.png" alt="" class="ml-5 imgtop  animate__animated animate__zoomIn">
+      <button class="navbar-toggler bg-dark  " type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto pt-1">
+          <li class="nav-item">
+            <a class="nav-link  text-dark" href="#">HOME<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-dark" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#features">FEATURES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-dark" href="#pricing">PRICING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-dark" href="#clients">CLIENTS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+  </header>
+  <!-- End Header -->
+
+  <!-- Home -->
+  <section class="">
+    <div class="container animate__animated animate__zoomIn animate__delay-1s">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12">
+          <img src="images2/logo1.png" alt="" class="mx-auto logo1 pb-3" >
+          <p class="Home_p">Grow Your business with the right Distributor <br>
+            Management System.</p>
+          <div class="pt-5">
+            <button class="btn1 " data-toggle="modal" data-target="#myModal">Reques Demo</button>
+            <button class="btn2" data-target="#myModal2" data-toggle="modal">LOG IN</button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+          <img src="images2/image.gif" alt="" class="img-fluid img3">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- REGISTRATION FORM -->
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title registitle">Registration Form</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form action="/action_page.php">
+              <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" class="form-control" placeholder="Enter First Name" name="email">
+              </div>
+              <div class="form-group">
+                <label for="email">Last Name:</label>
+                <input type="text" class="form-control" placeholder="Enter Last Name" name="pswd">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Email:</label>
+                <input type="email" class="form-control" placeholder="Enter Email" name="pswd">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+              </div>
+            </form>
+            <button type="submit" class="btn btn-primary w-100 cardbtn">SIGN UP</button>
+            <p class="pt-1">Already Have an account? <span> <a href="">SIGN IN</a></span></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- END REGISTRATION FORM -->
+
+
+    <!-- LOGIN FORM -->
+
+    <div class="modal fade pt-5" id="myModal2" role="dialog">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title logintitle">LOG IN</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form action="/action_page.php">
+              <div class="form-group">
+                <label for="pwd">Email:</label>
+                <input type="email" class="form-control" id="pwd" placeholder="Enter Email" name="pswd">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+              </div>
+            </form>
+            <button type="submit" class="btn btn-primary w-100 cardbtn">SIGN UP</button>
+            <p class="pt-1">Already Have an account? <span> <a href="">SIGN IN</a></span></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- End Home -->
+
+
+  <!-- About  -->
+  <section id="about" class="pt-3">
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-lg-1 col-md-1 col-12">
+          <h3 class="text-capitalize">ABOUT</h3>
+        </div>
+        <div class="col-lg-11 col-md-11 col-12">
+          <div class="line1 pt-3"></div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-lg-5 col-md-7 col-12">
+          <p class=" pl-4 about_p "data-aos="flip-left" data-aos-duration="3000" data-aos-offset="200">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nihil voluptatem non consequatur ullam veniam,
+            magnam fugiat expedita qui, neque distinctio iste,
+            consectetur repellat? Repellat maxime, itaque corrupti
+            vero incidunt similique!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eaque repellendus in vero sunt, debitis expedita consequatur
+            sed exercitationem! Quos expedita accusamus saepe porro
+            obcaecati minima voluptate repudiandae distinctio ratione dolor?
+          </p>
+        </div>
+        <div class="col-lg-7 col-md-7 col-12">
+          <img src="images2/aboutimg.png" alt="" class="img-fluid"data-aos="flip-left" data-aos-duration="3000" data-aos-offset="200">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About -->
+
+  <!-- Features  -->
+  <section id="features" class="pt-3">
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-lg-1 col-md-1 col-12" >
+          <h3 class="text-capitalize">FEATURES</h3>
+        </div>
+        <div class="col-lg-11 col-md-11 col-12">
+          <div class="line2 pt-4"></div>
+        </div>
+      </div>
+      <div class="row mb-5" data-aos="fade-up" data-aos-duration="3000">
+        <div class="col-lg-6 col-md-6 col-12">
+          <div class="container">
+            <div class="row feature_cards">
+              <div class="col-lg-2 col-md-2 col-12">
+                <img src="images2/025-key.png" alt="" class="featimg pt-4">
+              </div>
+              <div class="col-lg-10 col-md-10 col-12 p-3">
+                <h6>This is heading</h6>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                assumenda laudantium unde libero doloremque, vero repellat face
+                Blanditiis architecto assumenda cumque rem so good light height.
+              </div>
+            </div>
+          </div> <br> <br>
+          <div class="container">
+            <div class="row feature_cards">
+              <div class="col-lg-2 col-md-2 col-12">
+                <img src="images2/038-security.png" alt="" class="featimg pt-4">
+              </div>
+              <div class="col-lg-10 col-md-10 col-12 p-3">
+                <h6>This is heading</h6>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                assumenda laudantium unde libero doloremque, vero repellat face
+                Blanditiis architecto assumenda cumque rem so good light height.
+              </div>
+            </div>
+          </div><br><br>
+          <div class="container">
+            <div class="row feature_cards">
+              <div class="col-lg-2 col-md-2 col-12">
+                <img src="images2/008-checklist.png" alt="" class="featimg pt-4">
+              </div>
+              <div class="col-lg-10 col-md-10 col-12 p-3">
+                <h6>This is heading</h6>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                assumenda laudantium unde libero doloremque, vero repellat face
+                Blanditiis architecto assumenda cumque rem so good light height.
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 col-md-6 col-12">
+          <div class="container">
+            <div class="row feature_cards">
+              <div class="col-lg-2 col-md-2 col-12">
+                <img src="images2/009-clipboard.png" alt="" class="featimg pt-4">
+              </div>
+              <div class="col-lg-10 col-md-10 col-12 p-3">
+                <h6>This is heading</h6>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                assumenda laudantium unde libero doloremque, vero repellat face
+                Blanditiis architecto assumenda cumque rem so good light height.
+              </div>
+            </div>
+          </div><br><br>
+          <div class="container">
+            <div class="row feature_cards">
+              <div class="col-lg-2 col-md-2 col-12">
+                <img src="images2/010-clock.png" alt="" class="featimg pt-4">
+              </div>
+              <div class="col-lg-10 col-md-10 col-12 p-3">
+                <h6>This is heading</h6>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                assumenda laudantium unde libero doloremque, vero repellat face
+                Blanditiis architecto assumenda cumque rem so good light height.
+              </div>
+            </div>
+          </div> <br><br>
+          <div class="container">
+            <div class="row feature_cards">
+              <div class="col-lg-2 col-md-2 col-12">
+                <img src="images2/014-cpu.png" alt="" class="featimg pt-4">
+              </div>
+              <div class="col-lg-10 col-md-10 col-12 p-3">
+                <h6>This is heading</h6>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                assumenda laudantium unde libero doloremque, vero repellat face
+                Blanditiis architecto assumenda cumque rem so good light height.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End features -->
+
+  <!-- Pricing  -->
+  <section id="pricing" class="pt-3">
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-lg-1 col-md-1 col-12">
+          <h3 class="text-capitalize">PRICING</h3>
+        </div>
+        <div class="col-lg-11 col-md-11 col-12">
+          <div class="line3 pt-4"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4 col-md-4 col-12">
+
+            <div class="card card1 mx-auto pt-4" data-aos="zoom-in-right" data-aos-duration="3000">
+              <h4 class="text-center cardheader1">BASIC PLAN</h4>
+              <p class="text-center cardheader2">This is basic plan</p>
+              <div class="circlerborder1">
+                <div class="circle1 mx-auto pt-4 text-white">
+                  <b>PKR :</b>
+                  4000<br>
+                  /mo
+                </div>
+              </div>
+              <div class="card-body cardbody1">
+                <div class="row">
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <div class="cardleft1">
+                      <p>Space</p>
+                      <p>FTP User</p>
+                      <p>Databases</p>
+                      <p>Adonos Domain</p>
+                      <p>24/7 Support</p>
+                      <p>Custom Email</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <div class="cardright1">
+                      <p>30GB</p>
+                      <p>50</p>
+                      <p>50</p>
+                      <p>5</p>
+                      <p>Yes</p>
+                      <p>50</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="cardbtn1 btn-white w-100 ">Chosse Plan</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="card card2  mx-auto pt-4"data-aos="zoom-in-up" data-aos-duration="3000">
+              <h4 class="text-center cardheader1">STANDARD PLAN</h4>
+              <p class="text-center cardheader2">This is standard plan</p>
+              <div class="circlerborder2">
+                <div class="circle2 mx-auto pt-4 text-white">
+                  <b>PKR :</b>
+                  4000<br>
+                  /mo
+                </div>
+              </div>
+              <div class="card-body cardbody2">
+                <div class="row">
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <div class="cardleft2">
+                      <p>Space</p>
+                      <p>FTP User</p>
+                      <p>Databases</p>
+                      <p>Adonos Domain</p>
+                      <p>24/7 Support</p>
+                      <p>Custom Email</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <div class="cardright2 ">
+                      <p>10GB</p>
+                      <p>10</p>
+                      <p>10</p>
+                      <p>2</p>
+                      <p>Yes</p>
+                      <p>10</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="cardbtn2 btn-white w-100 ">Chosse Plan</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="card card3  mx-auto pt-4" data-aos="zoom-in-left" data-aos-duration="3000">
+              <h4 class="text-center cardheader1">PREMIUM PLAN</h4>
+              <p class="text-center cardheader2">This is premium plan</p>
+              <div class="circlerborder3">
+                <div class="circle3 mx-auto pt-4 text-white">
+                  <b>PKR :</b>
+                  4000<br>
+                  /mo
+                </div>
+              </div>
+              <div class="card-body cardbody3">
+                <div class="row">
+                  <div class="col-lg-8 col-md-8  col-12">
+                    <div class="cardleft3">
+                      <p>Space</p>
+                      <p>FTP Userb</p>
+                      <p>Databases</p>
+                      <p>Adonos Domain</p>
+                      <p>24/7 Support</p>
+                      <p>Custom Email</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <div class="cardright3 ">
+                      <p>10GB</p>
+                      <p>10</p>
+                      <p>10</p>
+                      <p>2</p>
+                      <p>Yes</p>
+                      <p>10</p>
+                    </div>
+                  </div>
+                </div>
+                <button class=" cardbtn3 btn-white w-100 ">Chosse Plan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Pricing -->
+
+
+
+
+  <!-- Clients  -->
+  <section id="clients" class="pt-3">
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-lg-1 col-md-1 col-12">
+          <h3 class="text-capitalize">CLIENTS</h3>
+        </div>
+        <div class="col-lg-11 col-md-11 col-12">
+          <div class="line4 pt-4"></div>
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <div class="row mb-5 py-5">
+          <div class="col-lg-3 col-md-3 col-12">
+            <img src="images2/Asset 1.png" alt="" class="Clientimg "data-aos="zoom-in-right" data-aos-duration="3000">
+          </div>
+          <div class="col-lg-3 col-md-3 col-12">
+            <img src="images2/Asset 2.png" alt="" class="Clientimg "data-aos="zoom-in-up" data-aos-duration="3000">
+          </div>
+          <div class="col-lg-3 col-md-3 col-12">
+            <img src="images2/Asset 3.png" alt="" class="Clientimg"data-aos="zoom-in-up" data-aos-duration="3000">
+          </div>
+          <div class="col-lg-3 col-md-3 col-12">
+            <img src="images2/Asset 4.png" alt="" class="Clientimg pt-3 "data-aos="zoom-in-left" data-aos-duration="3000">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Clients -->
+
+
+  <!-- FOOTER -->
+  <footer class="pt-5">
+    <div class="container-fluid">
+      <div class="row mx-auto">
+        <div class="col-lg-4 col-md-4 col-12">
+          <h4>COMPANY</h4>
+          <div class="vertical-menu pt-3">
+            <a href="#">HOME</a>
+            <a href="#About">ABOUT</a>
+            <a href="#features">FEATURES</a>
+            <a href="#pricing">PRICING</a>
+            <a href="#clients">CLIENTS</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <h4>CONTACT US</h4>
+          <p class="pt-3 email">info@salesvio.com</p>
+          <p class="pt-3 phone">+9251-2711002</p>
+          <p class="location">Bahria Town Phase 4, <br> Islamabad Pakistan</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <h4>SUBSCRIBE TO OUR EMAIL</h4>
+          <div class="pt-3">
+            <input type="text" name="" id="" class="input" placeholder="EMAIL">
+            <button class="Sbtn bg-primary">SUBSCRIBE</button>
+          </div>
+          <div class="follow_us">
+            <h5>FOLLOW US</h5> <br>
+            <div class=" allicons">
+              <img src="images2/011-instagram.png" alt="" class="iconimg">
+              <img src="images2/001-twitter.png" alt="" class="iconimg">
+              <img src="images2/008-facebook.png" alt="" class="iconimg">
+              <img src="images2/010-linkedin.png" alt="" class="iconimg">
+            </div>
+          </div>
+        </div>
+      </div> <br>
+      <p class="copyright"><b> Copyright&copy; 2021 SalesVio. All Right Reserved</b></p>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+
+
+  <!-- JQUERY -->
+
+  <script>
+    $(document).ready(function () {
+          //  header image
+      $(".imgtop").mouseenter(function () {
+        $(this).addClass("imgsize")
+      })
+      $(".imgtop").mouseleave(function () {
+        $(this).removeClass("imgsize")
+        $(this).css("transition", "0.5s")
+      })
+      // end header image
+
+
+      // Card1
+      $(".card1").mouseenter(function () {
+        $(".circle1").addClass("circle1color")
+        $(".cardbtn1").addClass("btncolor1")
+      })
+      $(".card1").mouseleave(function () {
+        $(".circle1").removeClass("circle1color")
+        $(".cardbtn1").removeClass("btncolor1")
+      })
+      // Card2
+      $(".card2").mouseenter(function () {
+        $(".circle2").addClass("circle2color")
+        $(".cardbtn2").addClass("btncolor2")
+      })
+      $(".card2").mouseleave(function () {
+        $(".circle2").removeClass("circle2color")
+        $(".cardbtn2").removeClass("btncolor2")
+      })
+      // Card3
+      $(".card3").mouseenter(function () {
+        $(".circle3").addClass("circle3color")
+        $(".cardbtn3").addClass("btncolor3")
+      })
+      $(".card3").mouseleave(function () {
+        $(".circle3").removeClass("circle3color")
+        $(".cardbtn3").removeClass("btncolor3")
+      })
+    });
+  </script>
+  <!-- END JQUERY -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>

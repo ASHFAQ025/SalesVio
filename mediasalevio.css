@@ -1,0 +1,61 @@
+@media only screen and (max-width: 1024px){
+   
+   .cardheader1{
+       font-size: 18px;
+   }
+   .cardheader2{
+       font-size: 12px;
+   }
+
+   .feature_cards{
+    font-size: 8px;  
+   }
+   .featimg{
+       width: 50.5px;
+       
+   }
+
+}
+@media only screen and (max-width: 765px){
+   .card{
+    width: 100%;
+}
+/* card1 */
+.cardleft1{
+    position: absolute;
+}
+ .cardright1{
+     position: relative;
+     padding-bottom: 0;
+     padding-left: 80%;
+
+ }
+ /* end card1 */
+
+
+
+ /* card2 */
+.cardleft2{
+    position: absolute;
+}
+ .cardright2{
+     position: relative;
+     padding-bottom: 0;
+     padding-left: 80%;
+
+ }
+ /* end card2 */
+
+
+ /* card3 */
+.cardleft3{
+    position: absolute;
+}
+ .cardright3{
+     position: relative;
+     padding-bottom: 0;
+     padding-left: 80%;
+
+ }
+ /* end card3 */
+}
